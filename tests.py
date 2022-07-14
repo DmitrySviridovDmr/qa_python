@@ -27,7 +27,7 @@ class TestBooksCollector:
         collector = BooksCollector()
         collector.add_new_book("Зомби захочет убить вас")
         collector.add_new_book("Зомби захочет убить вас")
-        assert len(collector.get_books_rating()) != 2
+        assert len(collector.get_books_rating()) == 1
 
     def test_set_book_rating_not_in_list(self):
         collector = BooksCollector()
